@@ -544,12 +544,13 @@ span {
 
 .skills-content .progress h3 {
   font-size: 1.7rem;
-  display: flex;
-  justify-content: space-between;
+  text-align: center; /* Center the text */
+  margin-bottom: 1rem; /* Add some space between text and bar */
 }
 
 .skills-content .progress h3 span {
   color: var(--text-color);
+  display: none;
 }
 
 .skills-content .progress .bar {
@@ -557,7 +558,7 @@ span {
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
   padding: 0.5rem;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0; /* Add more bottom margin for spacing between items */
 }
 
 .skills-content .progress .bar span {
@@ -613,6 +614,14 @@ span {
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
   width: 94%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress h3 {
+  font-size: 1.5rem; /* Slightly smaller font for longer skill names */
+  min-height: 3.5rem; /* Ensure consistent height for multi-line skill names */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact {
