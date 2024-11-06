@@ -96,6 +96,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
+  padding-top: 7rem; /* Add this line */
   background-image: url("../images/Portfolio\ alternative.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1273,5 +1274,31 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 500px) {
   .project-card {
     width: 100%;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .home {
+    padding-top: 8rem; /* Increase padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding-top: 10rem; /* Further increase padding for small screens */
+    min-height: 100vh; /* Ensure full viewport height on mobile */
+    padding-bottom: 8rem; /* Add some bottom padding */
+  }
+
+  .home-sci {
+    bottom: 6rem; /* Adjust the position of social icons */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .home {
+    padding-top: 12rem; /* Even more padding for very small screens */
   }
 }
